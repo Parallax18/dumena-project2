@@ -689,6 +689,10 @@ ul{
     outline: none;
   }
 
+  .partners{
+    display: none;
+  }
+
   .my-courses-header{
       font-size: 20px;
       font-weight: bold;
