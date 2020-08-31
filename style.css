@@ -1,0 +1,1151 @@
+/* root */
+
+:root {
+  --white: #fff;
+  --primary-color: #33a1e4;
+  --secondary-color: rgb(126, 126, 126);
+  --overlay-color: rgba(29, 96, 196, 0.473);
+  --main-text: #444;
+}
+
+/* end of root */
+
+
+
+
+/* defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input:focus,
+input:active {
+  outline: none;
+  border: none;
+}
+
+ul{
+    list-style: none;
+}
+/* end of defaults */
+
+
+
+
+/* navbar components */
+.my-navbar {
+  width: 100%;
+  top: 0;
+  height: 50px;
+  color: var(--white);
+}
+
+.my-brand {
+  font-size: 50px;
+}
+
+.my-dropdown {
+  background: var(--primary-color);
+  width: 150px;
+  border-radius: 5px;
+}
+
+.my-dropdown-menu {
+  color: var(--white);
+  border: 2px solid var(--primary-color);
+}
+
+.my-search-form {
+  border: 1px solid silver;
+  height: 100%;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.my-search-btn {
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  max-width: 15px;
+  font-weight: lighter;
+  color: var(--white);
+}
+
+.my-search-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: silver;
+  outline: none;
+}
+
+.my-search-input:active,
+.my-search-input:focus {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--white);
+}
+
+.my-search-input::placeholder {
+  color: silver;
+}
+
+.login-link {
+  color: var(--primary-color);
+}
+
+.my-signup-btn {
+  background: var(--primary-color);
+  width: 150px;
+  height: 30px;
+  border-radius: 13px;
+}
+
+.my-navbar-toggler {
+  color: var(--white);
+}
+
+/* end of navbar components */
+
+
+
+
+/* Hero and jumbotron section components */
+
+.my-jumbotron {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.144) 50%,
+      rgba(0, 0, 0, 0.144) 50%
+    ),
+    url(./images/index_img.png) center center/cover no-repeat;
+  height: 90vh;
+  border-radius: 0;
+}
+
+.my-jumbotron-content {
+  width: 70%;
+}
+
+.my-jumbotron-input {
+  border: 2px solid var(--primary-color);
+  width: 500px;
+  height: 50px;
+}
+
+/* End of hero and jumbotron components */
+
+
+
+
+
+/* Partner slider components */
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+    height: 147px;
+    padding: 2em;
+    align-items: center;
+    transform: translateY(-40%);
+    background: var(--white);
+    box-shadow: 0px 2px 2px 1px rgba(146, 146, 146, 0.788);
+  }
+  
+  .partner-head {
+    width: 150px;
+    height: 100%;
+    text-align: left;
+    padding: 2em;
+    padding-right: 2em;
+    padding-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary-color);
+    font-size: 17px;
+    font-weight: normal;
+    display: flex;
+  }
+  
+  .partner-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 4em;
+  }
+  
+  .partner-item {
+    font-size: 25px;
+    color: var(--secondary-color);
+  }
+  
+  .partner-left-btn,
+  .partner-right-btn {
+    font-size: 25px;
+    color: var(--secondary-color);
+  }
+  
+  .partner-logo {
+    font-size: 35px;
+    color: rgb(168, 166, 166);
+  }
+/* End of partners components */
+
+
+
+
+
+
+/* tab navigation components */
+
+.my-tab-link {
+  color: black;
+}
+
+.my-tab-link:active,
+.my-tab-link:focus {
+  border: none;
+}
+
+
+.my-card-deck{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  margin: 0;
+  padding: 0;
+}
+/* end of tab component */
+
+
+
+
+
+
+/* card components */
+
+.my-card {
+  border-radius: none;
+  box-shadow: 1px 1px 1px 1.3px rgba(192, 192, 192, 0.486);
+}
+
+.overlay {
+  position: absolute;
+  background: #33a0e49a;
+  color: var(--white);
+  height: 170px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+  /* transform: translateY(-103%); */
+}
+
+.my-card-body {
+  height: 52%;
+  padding: 10px;
+}
+
+.my-card-name {
+  font-size: 13px;
+}
+
+.my-card-title {
+  font-size: 12px;
+  color: var(--main-text);
+  font-weight: bold;
+}
+
+.my-card-title:hover {
+  text-decoration: none;
+}
+
+.my-card-text {
+  font-size: 13px;
+}
+
+.my-stars {
+  margin-top: 0;
+  color: goldenrod;
+}
+
+.my-card-footer {
+  color: var(--white);
+  background: var(--primary-color);
+  height: 50px;
+  font-weight: bold;
+}
+
+.deduction {
+  border-left: 1px solid var(--white);
+  color: red !important;
+}
+
+/* End of card and tab section */
+
+/* find more components */
+
+.find-more-section {
+  width: 100%;
+  height: 25rem;
+  box-shadow: 1px 1px 1px 1px silver;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+  align-content: center;
+}
+
+.grey-area {
+  width: 350px;
+  height: 400px;
+  margin-left: 0;
+  transform: translateX(-4%);
+  margin: 0 !important;
+}
+
+.girl {
+  transform: translateX(17%) translateY(-100%);
+  margin: 0 !important;
+}
+
+.card-text-content {
+  height: 400px;
+  padding-left: 3rem;
+}
+
+.my-find-more-btn {
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 50px;
+  /* display: block; */
+  font-size: 20px;
+  font-weight: bolder;
+  width: 250px;
+}
+
+/* Learn grid components */
+
+.learn-item {
+  width: 300px;
+}
+
+.learn-img {
+  height: 170px;
+  width: 250px;
+}
+
+.learn-overlay {
+  position: absolute;
+  background: #424141bd;
+  color: var(--secondary-color);
+  height: 171px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  transform: translateY(-100%);
+  padding: 2em;
+  padding-top: 5em;
+  padding-left: 1em;
+  font-size: 10px;
+  margin-bottom: 10em;
+}
+
+.learn-overlay:hover {
+  color: rgb(194, 193, 193);
+}
+
+/* end of learn grid components */
+
+
+
+/* student community feedback components*/
+
+.feedback {
+  background: #f6f8f9;
+  height: 570px;
+}
+
+.feedback-heading{
+  color: var(--main-text);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.feedback-area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+  }
+
+.chevron {
+  font-size: 35px;
+  color: var(--main-text);
+}
+
+.prev-btn,
+.next-btn {
+  margin: 2em;
+  border: none;
+  background: none;
+}
+
+.prev-btn,
+.next-btn:focus {
+  outline: none;
+}
+
+.feedback-list {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+.feedback-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  padding: 2rem;
+  box-shadow: 1px 1px 1px 1px silver;
+  border-radius: 10px;
+  background: var(--white);
+}
+
+.student {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.student-pic {
+  max-width: 120px;
+  height: 200px;
+  clip-path: circle();
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  height: 3px;
+  background-color: var(--primary-color);
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
+.student-name{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: var(--main-text);
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.student-socials {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.student-feedback-text {
+  font-size: 15px;
+  margin-bottom: 1em;
+  line-height: 30px;
+}
+
+.feedback-indicator {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.feedback-indicator .circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: rgb(202, 202, 202);
+  margin: 0 0.4em 0 0.4em;
+}
+
+.feedback-indicator .circle:first-child {
+  background-color: var(--main-text);
+}
+/* End of student community feedback component */
+
+
+
+/* Invest in your self components */
+.invest {
+    height: 450px;
+    margin-bottom: 2em;
+    /* background: linear-gradient(to bottom, #3497fb88 50%, #3497fb80 50%), url(./images/jeremy-mcknight-ix9I7kfMpcc-unsplash.jpg) top center/cover no-repeat; */
+    background: #3498fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .invest-left {
+    display: flex;
+    justify-items: flex-start;
+    width: 30%;
+  }
+  
+  .ellipse-one {
+    transform: translateX(-20%) translateY(5%);
+    width: 500px;
+  }
+  
+  .ellipse-two {
+    clip-path: circle();
+    width: 300px;
+    transform: translateX(-90%) translateY(-20%);
+  }
+  
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    color: var(--secondary-text);
+  }
+  
+  .center h1 {
+    font-size: 50px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  .center p {
+    font-size: 20px;
+    padding: 3em;
+  }
+  
+  .center a {
+    border: 2px solid #fff;
+    padding: 1em;
+    color: var(--secondary-text);
+    display: block;
+    width: 250px;
+    border-radius: 30px;
+  }
+  
+  .invest-right {
+    height: 100%;
+    width: 350px;
+  }
+  
+  .invest-right .circle-one {
+    height: 170px;
+    width: 170px;
+    clip-path: circle();
+    background: #64b1fc;
+    transform: translateY(30%) translateX(40%);
+  }
+  
+  .invest-right .circle-two {
+    height: 100px;
+    width: 100px;
+    clip-path: circle();
+    background: #6ae4c6;
+    transform: translateY(100%) translateX(210%);
+    overflow-x: hidden;
+  }
+  /* End of invest in yourself components */
+
+
+  /* Footer components */
+  .my-footer {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+    padding: 5em;
+    margin-bottom: 5em;
+    justify-content: space-between;
+    justify-items: center;
+  }
+  
+  .vision {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    color: var(--main-text);
+  }
+  
+  .vision-logo {
+    font-size: 40px;
+    color: var(--primary-color);
+  }
+  
+  .vision h2 {
+    font-size: 17px;
+  }
+  
+  .vision .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    font-size: 23px;
+  }
+  
+  .socials-link {
+    color: var(--primary-color);
+  }
+  
+  .about,
+  .legal,
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about h1,
+  .legal h1,
+  .content h1 {
+    padding-bottom: 0.5em;
+    font-size: 40px;
+    color: var(--main-text);
+  }
+  
+  .about-list {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    color: var(--secondary-text);
+  }
+  
+  .about-link {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-color);
+    line-height: 40px;
+  }
+
+
+
+
+
+/* media queries */
+
+@media (max-width: 425px) {
+  .my-jumbotron-content {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .my-jumbotron-text{
+      font-size: 16px;
+  }
+
+  .my-jumbotron-input {
+    border: 2px solid var(--primary-color);
+    width: 100%;
+    height: 35px;
+  }
+
+  .my-jumbotron-input::placeholder{
+      font-size: 12px;
+  }
+
+
+  .my-jumbotron-input:focus,
+  .my-jumbotron-input:active{
+    outline: none;
+  }
+
+  .my-courses-header{
+      font-size: 20px;
+      font-weight: bold;
+  }
+ 
+
+  .find-more-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(
+        to bottom,
+        rgba(233, 233, 233, 0.849) 50%,
+        rgba(233, 233, 233, 0.849) 50%
+      ),
+      url(./images/she.png) center center/cover no-repeat;
+    height: 30rem;
+    width: 100%;
+    margin-bottom: 1.5em;
+    box-shadow: none;
+  }
+
+  .grey-area {
+    display: none;
+  }
+
+  .girl {
+    display: none;
+    transform: translateX(-100%) translateY(30%);
+    width: 300px;
+  }
+
+  .card-text-content {
+    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    transform: translateX(-23%);
+  }
+
+  .card-text-content h1 {
+    font-size: 20px;
+    padding: 0 0 0 0;
+    padding-bottom: 0.7em;
+  }
+
+  .card-text-content p {
+    padding: 0 0 0 0;
+    line-height: 25px;
+    padding-bottom: 0.7em;
+  }
+
+  .find-btn {
+    padding-top: 1em;
+  }
+
+  .find-btn a {
+    width: 170px;
+    padding: 0.5em;
+    font-size: 15px;
+  }
+
+  .my-learn-section-head{
+      text-align: center;
+      font-size: 25px;
+  }
+
+  .my-learn-section-paragraph{
+      font-size: 15px;
+      text-align: center;
+  }
+
+
+  /* Student community feedback section responsive style */
+  .feedback {
+    height: 100vh;
+    margin:0;
+    align-items: center;
+  }
+
+  .feedback-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .feedback-area{
+    width: 100%;
+    margin: 0;
+    /* border: 1px solid green; */
+    padding: 0;
+  }
+
+  .prev-btn,
+  .next-btn{
+    /* border: 1px solid green; */
+    margin: 0;
+  }
+
+  .chevron{
+    font-size: 20px;
+    margin: 10px;
+    /* border: 1px solid red; */
+  }
+   
+  .feedback-list {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+
+  .feedback-item {
+    display: none;
+    flex-direction: column;
+    height: 110%;
+    width: 300px;
+    padding: 2em;
+  }
+
+  .feedback-item-current.feedback-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  .student {
+    height: 50%;
+  }
+
+  .student-info {
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .student-pic{
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .line {
+    margin: 0 4em 0 4em;
+  }
+
+  .student-socials{
+    width: 70%;
+  }
+
+  .student-name{
+    margin-bottom: 2px;
+    font-size: 13px;
+  }
+
+  .student-feedback-text {
+    font-size: 12px;
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
+    line-height: 20px;
+  }
+
+  /* End of student community feedback section responsive style */
+
+
+
+
+
+
+   /* invest in your self section responsive at 425px */
+
+   .invest {
+    padding: 2em;
+  }
+
+  .ellipse-one {
+    width: 300px;
+    opacity: 50%;
+    display: none;
+  }
+
+  .ellipse-two {
+    opacity: 40%;
+    display: none;
+  }
+
+  .center {
+    justify-content: center;
+    width: 5000em;
+    height: 100%;
+  }
+
+  .center h1 {
+    font-size: 20px;
+  }
+
+  .center p {
+    font-size: 17px;
+    padding-top: 2em;
+  }
+
+  .center a {
+    width: 150px;
+  }
+
+  .invest-right .circle-one {
+    display: none;
+  }
+
+  .invest-right .circle-two {
+    display: none;
+  }
+
+
+/* end of invest in yourself responsive styling */
+
+
+  /* footer responsive */
+  .my-footer {
+    height: 100vh;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  .vision {
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .vision-logo {
+    font-size: 25px;
+  }
+
+  .vision .socials {
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 4em 0 4em;
+    width: 100%;
+  }
+
+  .about,
+  .legal,
+  .content {
+    text-align: center;
+    width: 100%;
+  }
+
+  .about h1,
+  .legal h1,
+  .content h1 {
+    font-size: 20px;
+  }
+
+  .about-list {
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .about-link {
+    line-height: 30px;
+  }
+}
+
+
+
+/* media 1024px */
+@media (max-width: 1024px){
+
+    /* Student community feedback section responsive style  at 1024px*/
+  .feedback {
+    height: 100vh;
+    margin:0;
+    align-items: center;
+  }
+
+  .feedback-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .feedback-area{
+    width: 100%;
+    margin: 0;
+    /* border: 1px solid green; */
+    padding: 0;
+  }
+
+  .prev-btn,
+  .next-btn{
+    /* border: 1px solid green; */
+    margin: 0;
+  }
+
+  .chevron{
+    font-size: 20px;
+    margin: 10px;
+    /* border: 1px solid red; */
+  }
+   
+  .feedback-list {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+
+  .feedback-item {
+    display: none;
+    flex-direction: column;
+    height: 110%;
+    width: 300px;
+    padding: 2em;
+  }
+
+  .feedback-item-current.feedback-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  .student {
+    height: 50%;
+  }
+
+  .student-info {
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .student-pic{
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .line {
+    margin: 0 4em 0 4em;
+  }
+
+  .student-socials{
+    width: 70%;
+  }
+
+  .student-name{
+    margin-bottom: 2px;
+    font-size: 13px;
+  }
+
+  .student-feedback-text {
+    font-size: 12px;
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
+    line-height: 20px;
+  }
+
+  /* End of student community feedback section responsive style at 1024px */
+
+    /* invest in your self section responsive at 1024px */
+    .invest {
+        padding: 2em;
+      }
+    
+      .ellipse-one {
+        display: none;
+      }
+    
+      .ellipse-two {
+        display: none;
+      }
+    
+      .center {
+        justify-content: center;
+        width: 5000em;
+        height: 100%;
+      }
+    
+      .center h1 {
+        font-size: 20px;
+      }
+    
+      .center p {
+        font-size: 17px;
+        padding-top: 2em;
+      }
+    
+      .center a {
+        width: 150px;
+      }
+    
+      .invest-right .circle-one {
+        display: none;
+      }
+    
+      .invest-right .circle-two {
+        display: none;
+      }
+    
+
+
+    /* footer responsive at 1024px */
+    .my-footer {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        margin-bottom: 0;
+      }
+    
+      .vision {
+        text-align: center;
+        line-height: 30px;
+      }
+    
+      .vision-logo {
+        font-size: 25px;
+      }
+    
+      .vision .socials {
+        justify-content: center;
+        justify-content: space-between;
+        padding: 0 4em 0 4em;
+        width: 100%;
+      }
+    
+      .about,
+      .legal,
+      .content {
+        text-align: center;
+        width: 100%;
+      }
+    
+      .about h1,
+      .legal h1,
+      .content h1 {
+        font-size: 20px;
+      }
+    
+      .about-list {
+        flex-direction: row;
+        text-align: left;
+        justify-content: left;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    
+      .about-link {
+        line-height: 30px;
+      }
+
+      /* End of responsive footer */
+}
+
+

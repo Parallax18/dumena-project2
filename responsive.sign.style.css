@@ -1,0 +1,204 @@
+:root{
+    --primary-color: #33a1e4;
+    --secondary-color: rgb(126, 126, 126);
+    --overlay-color: rgba(29, 96, 196, 0.473);
+    --main-text: #444;
+    --secondary-text: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+.login-left{
+    height: 100%;
+    background: linear-gradient(to left, rgba(51, 51, 51, 0.438) 50%, rgba(51, 51, 51, 0.425) 50%), url(./images/pexels-julia-m-cameron-4144144.jpg) center center/cover no-repeat;
+    color: var(--secondary-text);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-left h1{
+    font-size: 50px;
+}
+
+.login-left p{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.login-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.login-right .logo{
+    font-size: 30px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.links h4{
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 0.5em;
+}
+
+.links a{
+    color: var(--secondary-color);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+}
+
+.email,
+.password{
+    border-bottom: 2px solid var(--secondary-color);
+    padding: 0.5em;
+}
+
+.fa-lock,
+.fa-envelope{
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-right: 0.3em;
+}
+
+.form-input{
+    border: none;
+    height: 100%;
+    width: 90%;
+    font-size: 15px;
+    transform: translateY(-10%);
+}
+
+.form-input:focus{
+    outline: none;
+}
+
+.form-bottom{
+    justify-content: space-between;
+}
+
+.form-bottom-left{
+    font-size: 17px;
+    color: var(--main-text);
+}
+
+.toggle-sign-in{
+    padding: 1em;
+    border: 1px solid red;
+}
+
+
+
+.sign-in-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    width: 120px;
+    background: var(--primary-color);
+    border: none;
+    color: var(--secondary-text);
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.sign-in-with{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.sign-in-with h3,
+h4{
+    color: var(--secondary-color);
+    font-weight: normal;
+}
+
+.sign-in-with h3{
+    margin-bottom: 1em;
+}
+
+.sign-in-options{
+    justify-content: space-between;
+    transform: translateX(22%);
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    width: 70%;
+}
+
+.sign-in-options-links{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    padding: 0.7em;
+    color: var(--main-text);
+    width: 150px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.fa-google-plus,
+.fa-facebook{
+    font-size: 25px;
+}
+
+.sign-in-with h4{
+    margin-top: 2em;
+    font-size: 13px;
+}
